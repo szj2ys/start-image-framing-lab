@@ -1,0 +1,72 @@
+{
+  "checked_utc": "2026-11-01T02:05:05.263467+00:00",
+  "ffmpeg": "ffmpeg version n7.0.1-playwright-build-1013 Copyright (c) 2000-2024 the FFmpeg developers",
+  "input_pixels": [
+    1200,
+    1200
+  ],
+  "fixture": "Original synthetic calibration image; not a product photo or an AI result.",
+  "geometry": {
+    "fit_padding_top_and_bottom_px": 280,
+    "crop_source_x_interval": [
+      262.5,
+      937.5
+    ],
+    "crop_source_width_retained_percent": 56.25
+  },
+  "outputs": {
+    "fit": {
+      "filter": "scale=720:1280:force_original_aspect_ratio=decrease,pad=720:1280:(ow-iw)/2:(oh-ih)/2:color=black",
+      "returncode": 0,
+      "format": "PNG",
+      "pixels": [
+        720,
+        1280
+      ],
+      "red_marker_pixels": 17280,
+      "blue_marker_pixels": 17280,
+      "top_pixel_rgb": [
+        0,
+        0,
+        0
+      ],
+      "bottom_pixel_rgb": [
+        0,
+        0,
+        0
+      ],
+      "bytes": 6710
+    },
+    "crop": {
+      "filter": "scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280",
+      "returncode": 0,
+      "format": "PNG",
+      "pixels": [
+        720,
+        1280
+      ],
+      "red_marker_pixels": 0,
+      "blue_marker_pixels": 0,
+      "top_pixel_rgb": [
+        230,
+        230,
+        230
+      ],
+      "bottom_pixel_rgb": [
+        230,
+        230,
+        230
+      ],
+      "bytes": 7282
+    }
+  },
+  "checks": {
+    "fit_dimensions": true,
+    "crop_dimensions": true,
+    "fit_keeps_both_edge_markers": true,
+    "crop_removes_both_edge_markers": true,
+    "fit_adds_black_padding": true,
+    "crop_has_no_black_padding": true
+  },
+  "passed": true
+}
